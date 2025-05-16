@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasty Express - Your Hunger, Our Express Mission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('restro banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); 
+      height: 100vh;
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+    }
+
+    .navbar .icon img {
+      height: 60px;
+      width: 60px;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      font-size: 20px;
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-buttons button {
+      padding: 15px 25px;
+      background-color: brown;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px); 
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .main h1 {
+      font-size: 70px;
+      font-family: montserrat;
+      font-weight: bold;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+      margin: 0;
+    }
+
+    .main p {
+      font-size: 28px;
+      font-family: cursive;
+      font-weight: 600;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .mainbody {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 30px;
+  flex-wrap: wrap; 
+}
+
+.mainbody img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.burger-description {
+  max-width: 500px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.mainbody2 {
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse; 
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+}
+
+.mainbody2 img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.pasta-description {
+  max-width: 500px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.mainbody, .mainbody2 {
+  background-color: #f9f9f9; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 30px;
+  flex-wrap: wrap;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.mainbody2 {
+  flex-direction: row-reverse;
+}
+.burger-description, .pasta-description {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 15px;
+  color: #f4a261;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="navbar">
+      <div class="icon">
+        <img src="Screenshot 2025-05-11 135557.png" alt="icon" />
+      </div>
+      <div class="nav-content">
+        <div class="nav-buttons">
+          <button>Sign In</button>
+          <button>Order Table</button>
+        </div>
+        <div class="nav-links">
+        
+          <a href="contact.html">Contact</a>
+          <a href="dinein.html">Dine In</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Tasty Express</h1>
+      <p>Your Hunger, Our Express Mission!</p>
+    </div>
+  </div>
+  <div class="mainbody">
+  <img src="juicy-burger-with-crispy-fries-red-onions.png" alt="burger" />
+  <div class="burger-description">
+    <h2>🔥 New Arrival: Blaze Crunch Burger</h2>
+    <p><b>Introducing the Blaze Crunch Burger</b> — a bold fusion of fiery flavor and irresistible crunch! This gourmet delight features a thick, juicy flame-grilled beef patty (or plant-based alternative), smothered in melted cheddar and spicy pepper jack cheese.</p>
+    <p>It's layered with jalapeño slaw and chipotle mayo, topped with crispy onion rings and smoky bacon, then stacked on a warm, garlic-buttered brioche bun. Served with a side of golden fries and our signature dipping sauce, it's a flavor explosion you won’t want to miss!</p>
+  </div>
+</div>
+<div class="mainbody2">
+  <div class="pasta-description">
+    <h2>🍝 New Arrival: Creamy Tuscan Alfredo Pasta</h2>
+    <p><b>Indulge in the luxurious taste of our Creamy Tuscan Alfredo Pasta</b>, a soul-satisfying blend of classic comfort and gourmet flair. This delightful dish features:</p>
+    <ul>
+      <li>🍝 Al dente fettuccine pasta</li>
+      <li>🧄 Tossed in a velvety garlic Parmesan Alfredo sauce</li>
+      <li>🍅 Sun-dried tomatoes and sautéed spinach for a burst of Mediterranean flavor</li>
+      <li>🧀 Finished with a sprinkle of aged Romano cheese and fresh herbs</li>
+    </ul>
+  </div>
+  <img src="delicious-spaghetti-bolognese-with-cherry-tomatoes-basil.png" alt="pasta" />
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>Tasty Express</h3>
+      <p>Serving joy, one dish at a time. Visit us for a delightful dine-in or quick takeaway experience!</p>
+    </div>
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p>📍 Vasudev Nagar Nagpur</p>
+      <p>📞 8261034489</p>
+      <p>✉️ contact@tastyexpress.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Tasty Express. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
